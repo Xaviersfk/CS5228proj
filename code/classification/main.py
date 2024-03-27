@@ -14,8 +14,8 @@ device = torch.device("cuda")
 print(f"Using device: {device}")
 
 def Load_dataset():
-    train_data = pd.read_csv('..\\raw_data\\xtrain.csv')
-    # train_data = pd.read_csv('..\\raw_data\\fulltrain.csv')
+    # train_data = pd.read_csv('..\\raw_data\\xtrain.csv')
+    train_data = pd.read_csv('..\\raw_data\\fulltrain.csv')
     x_train = train_data.iloc[:, 1]
     y_train = train_data.iloc[:, 0]
 
